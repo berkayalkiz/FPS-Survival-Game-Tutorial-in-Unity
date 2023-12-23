@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -34,9 +35,26 @@ public class PlayerMovement : MonoBehaviour
         move_Direction = transform.TransformDirection(move_Direction);
         move_Direction *= speed * Time.deltaTime;
 
+        ApplyGravity();
+
         character_Controller.Move(move_Direction);
 
     }
 
+    void ApplyGravity()
+    {
+        vertical_Velocity -= gravity * Time.deltaTime;
 
+        PlayerJump();
+
+        move_Direction.y = vertical_Velocity * Time.deltaTime ;
+    }
+
+    private void PlayerJump()
+    {
+        if(character_Controller.isGrounded && (Input.GetKeyDown(KeyCode.Space)|| Input.GetKey(KeyCode.Space)))
+        {
+            vertical_Velocity = jump_Force;
+        }
+    }
 }
