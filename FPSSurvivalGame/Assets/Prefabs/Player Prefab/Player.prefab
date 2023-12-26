@@ -889,6 +889,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1020900bb150dcd4dbe79039b36e7f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon_Aim: 0
+  muzzleFlash: {fileID: 0}
+  shootSound: {fileID: 0}
+  reload_Sound: {fileID: 0}
+  fireType: 0
+  bulletType: 3
+  attack_Point: {fileID: 0}
 --- !u!4 &1009810350303344030 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400014, guid: ded3362b8b3b82243b3043bb355c770c, type: 3}
@@ -1359,6 +1366,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1020900bb150dcd4dbe79039b36e7f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon_Aim: 2
+  muzzleFlash: {fileID: 0}
+  shootSound: {fileID: 6020254701886832558}
+  reload_Sound: {fileID: 0}
+  fireType: 0
+  bulletType: 0
+  attack_Point: {fileID: 0}
 --- !u!1001 &3744497868579158500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1879,6 +1893,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1020900bb150dcd4dbe79039b36e7f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon_Aim: 2
+  muzzleFlash: {fileID: 0}
+  shootSound: {fileID: 7129014123110625518}
+  reload_Sound: {fileID: 5387983616330036777}
+  fireType: 0
+  bulletType: 0
+  attack_Point: {fileID: 0}
 --- !u!1001 &6715413360152817619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2283,6 +2304,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1020900bb150dcd4dbe79039b36e7f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon_Aim: 2
+  muzzleFlash: {fileID: 0}
+  shootSound: {fileID: 8862148819670357165}
+  reload_Sound: {fileID: 0}
+  fireType: 1
+  bulletType: 0
+  attack_Point: {fileID: 0}
 --- !u!4 &6715413360152950093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400030, guid: 48d42201fa1ddd74b8df820204882ede, type: 3}
@@ -2698,6 +2726,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1020900bb150dcd4dbe79039b36e7f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon_Aim: 1
+  muzzleFlash: {fileID: 0}
+  shootSound: {fileID: 0}
+  reload_Sound: {fileID: 0}
+  fireType: 0
+  bulletType: 1
+  attack_Point: {fileID: 0}
 --- !u!1001 &7177341293914171739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3012,3 +3047,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1020900bb150dcd4dbe79039b36e7f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon_Aim: 1
+  muzzleFlash: {fileID: 0}
+  shootSound: {fileID: 0}
+  reload_Sound: {fileID: 0}
+  fireType: 0
+  bulletType: 2
+  attack_Point: {fileID: 0}
