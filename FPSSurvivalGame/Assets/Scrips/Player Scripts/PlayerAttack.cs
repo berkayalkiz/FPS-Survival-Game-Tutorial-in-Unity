@@ -44,12 +44,25 @@ public class PlayerAttack : MonoBehaviour
         }
         else
         {
-            if (!Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
             {
+                //axe
                 if (weapon_Manager.GetCurrentSelectedWeapon().tag == Tags.AXE_TAG)
+                {
+                    weapon_Manager.GetCurrentSelectedWeapon().ShootAnimation();
+                }
+
+                if (weapon_Manager.GetCurrentSelectedWeapon().bulletType == WeaponBulletType.BULLET)
+                {
+                    weapon_Manager.GetCurrentSelectedWeapon().ShootAnimation();
+
+
+                }
+                else
                 {
 
                 }
+
             }
         }
     }
