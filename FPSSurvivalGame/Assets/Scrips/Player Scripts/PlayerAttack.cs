@@ -20,11 +20,16 @@ public class PlayerAttack : MonoBehaviour
 
     private bool is_Aiming;
 
+    private Transform lookRoot;
+
     private void Awake()
     {
         weapon_Manager = GetComponent<WeaponManager>();
 
-        zoomCameraAnim = transform.Find(Tags.LOOK_ROOT).transform.Find(Tags.ZOOM_CAMERA).GetComponent<Animator>();
+        lookRoot = transform.GetChild(0);
+        zoomCameraAnim = lookRoot.GetChild(0).GetComponent<Animator>();
+
+        //zoomCameraAnim = transform.Find(Tags.LOOK_ROOT).transform.Find(Tags.ZOOM_CAMERA).GetComponent<Animator>();
 
         crosshair = GameObject.FindWithTag(Tags.CROSSHAIR);
 

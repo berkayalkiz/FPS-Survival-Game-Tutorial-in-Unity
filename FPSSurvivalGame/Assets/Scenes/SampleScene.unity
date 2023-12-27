@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 947330016}
   m_Layer: 5
   m_Name: Crosshair
-  m_TagString: Untagged
+  m_TagString: Crosshair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -451,32 +451,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1aa7bf25b446c4baa8e0af352f470d1b, type: 3}
---- !u!1 &1590015379 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 302176510515801088, guid: 8f6ef7c416432264ab49f3e88de335c6, type: 3}
-  m_PrefabInstance: {fileID: 6870366766705413214}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1590015382
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1590015379}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 013accce38f5b8248b73f3ae23def5a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2073315910
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,17 +527,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1009810350302849470, guid: 8f6ef7c416432264ab49f3e88de335c6, type: 3}
-      propertyPath: m_TagString
-      value: Axe
-      objectReference: {fileID: 0}
     - target: {fileID: 2327657469180875166, guid: 8f6ef7c416432264ab49f3e88de335c6, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3014799673411337645, guid: 8f6ef7c416432264ab49f3e88de335c6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 5681595343254330468, guid: 8f6ef7c416432264ab49f3e88de335c6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6708765344145008520, guid: 8f6ef7c416432264ab49f3e88de335c6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -605,17 +575,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6715413360152914285, guid: 8f6ef7c416432264ab49f3e88de335c6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 302176510515801088, guid: 8f6ef7c416432264ab49f3e88de335c6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1590015382}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6ef7c416432264ab49f3e88de335c6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
