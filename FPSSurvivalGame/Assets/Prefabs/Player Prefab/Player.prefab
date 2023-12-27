@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 9166581560165044293}
   - component: {fileID: 7203063372790306584}
   - component: {fileID: 6771213115456803449}
+  - component: {fileID: 7008257141810105936}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -178,7 +179,7 @@ CharacterController:
   m_Height: 1.8
   m_Radius: 0.35
   m_SlopeLimit: 55
-  m_StepOffset: 0.2
+  m_StepOffset: 1.79
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 1, z: 0}
@@ -211,6 +212,25 @@ MonoBehaviour:
   sprint_Speed: 8
   move_Speed: 4
   crouch_Speed: 1.5
+--- !u!114 &7008257141810105936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2327657469180875166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1f2496383e02b47a978f0523aa2f63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 5177720865915510544}
+  - {fileID: 2572104079245247857}
+  - {fileID: 8847912097366430107}
+  - {fileID: 9020767344729343663}
+  - {fileID: 4539998198032287551}
+  - {fileID: 6794999025366644420}
 --- !u!1 &4797542351585221829
 GameObject:
   m_ObjectHideFlags: 0
