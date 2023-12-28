@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &110727503121783643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3309467819973519873}
+  m_Layer: 0
+  m_Name: Arrow Bow Start Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3309467819973519873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110727503121783643}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.525, z: 0.898}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6708765344145008520}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &302176510515801088
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +209,7 @@ Transform:
   m_Children:
   - {fileID: 564533939534418599}
   - {fileID: 416496097054393521}
+  - {fileID: 3309467819973519873}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &9166581560165044293
@@ -268,6 +300,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 15
   damage: 20
+  arrow_Prefab: {fileID: 3353146672627984233, guid: 997d207db41c9574089c9381f3c44029, type: 3}
+  bow_Prefab: {fileID: 1161824784935565954, guid: 8331da24f23276d4caa6f6c4cc5abd3f, type: 3}
+  arrow_Bow_StartPosition: {fileID: 0}
 --- !u!1 &4797542351585221829
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +463,7 @@ GameObject:
   - component: {fileID: 564533939534418599}
   - component: {fileID: 4345739029213687933}
   m_Layer: 0
-  m_Name: LookRoot
+  m_Name: Look Root
   m_TagString: Look Root
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2811,6 +2846,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 15
   damage: 20
+  arrow_Prefab: {fileID: 0}
+  bow_Prefab: {fileID: 0}
+  arrow_Bow_StartPosition: {fileID: 3309467819973519873}
 --- !u!1001 &7177341293914171739
 PrefabInstance:
   m_ObjectHideFlags: 0

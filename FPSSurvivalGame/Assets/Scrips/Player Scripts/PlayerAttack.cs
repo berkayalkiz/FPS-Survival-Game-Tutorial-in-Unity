@@ -20,16 +20,22 @@ public class PlayerAttack : MonoBehaviour
 
     private bool is_Aiming;
 
-    private Transform lookRoot;
+    private Transform lookRoot; // unactivate
+
+    [SerializeField]
+    private GameObject arrow_Prefab, bow_Prefab;
+
+    [SerializeField]
+    private Transform arrow_Bow_StartPosition;
 
     private void Awake()
     {
         weapon_Manager = GetComponent<WeaponManager>();
 
-        lookRoot = transform.GetChild(0);
-        zoomCameraAnim = lookRoot.GetChild(0).GetComponent<Animator>();
+        //lookRoot = transform.GetChild(0);
+        //zoomCameraAnim = lookRoot.GetChild(0).GetComponent<Animator>();
 
-        //zoomCameraAnim = transform.Find(Tags.LOOK_ROOT).transform.Find(Tags.ZOOM_CAMERA).GetComponent<Animator>();
+        zoomCameraAnim = transform.Find(Tags.LOOK_ROOT).transform.Find(Tags.ZOOM_CAMERA).GetComponent<Animator>();
 
         crosshair = GameObject.FindWithTag(Tags.CROSSHAIR);
 
@@ -120,7 +126,7 @@ public class PlayerAttack : MonoBehaviour
 
                 crosshair.SetActive(true);
             }
-        }
+        }// weapon aim
 
         if(weapon_Manager.GetCurrentSelectedWeapon().weapon_Aim  == WeaponAim.SELF_AIM)
         {
@@ -138,6 +144,13 @@ public class PlayerAttack : MonoBehaviour
                 is_Aiming = false;
             }
 
-        }
+        }// weapon self aim
+
     }// zoom in and out func
+
+    void ThrowArrowOrSpear(bool throwArrow)
+    {
+
+    }
+
 }
