@@ -23,7 +23,7 @@ public class PlayerAttack : MonoBehaviour
     private Transform lookRoot; // unactivate
 
     [SerializeField]
-    private GameObject arrow_Prefab, bow_Prefab;
+    private GameObject arrow_Prefab, spear_Prefab;
 
     [SerializeField]
     private Transform arrow_Bow_StartPosition;
@@ -66,7 +66,7 @@ public class PlayerAttack : MonoBehaviour
 
                 weapon_Manager.GetCurrentSelectedWeapon().ShootAnimation();
 
-
+                BulletFired();
             }
         }
         else
@@ -84,7 +84,7 @@ public class PlayerAttack : MonoBehaviour
                 {
                     weapon_Manager.GetCurrentSelectedWeapon().ShootAnimation();
 
-
+                    BulletFired();
                 }
 
                 // arrow and spear
@@ -96,12 +96,12 @@ public class PlayerAttack : MonoBehaviour
 
                         if(weapon_Manager.GetCurrentSelectedWeapon().bulletType == WeaponBulletType.ARROW)
                         {
-
+                            ThrowArrowOrSpear(true);
                         }
 
                         else if (weapon_Manager.GetCurrentSelectedWeapon().bulletType == WeaponBulletType.SPEAR)
                         {
-
+                            ThrowArrowOrSpear(false);
                         }
                     } 
                 }
@@ -150,7 +150,32 @@ public class PlayerAttack : MonoBehaviour
 
     void ThrowArrowOrSpear(bool throwArrow)
     {
+        if (throwArrow)
+        {
+            GameObject arrow = Instantiate(arrow_Prefab);
+            arrow.transform.position = arrow_Bow_StartPosition.position;
 
-    }
+            arrow.GetComponent<ArrowBowScript>().Launch(mainCam);
+
+        }
+        else
+        {
+            GameObject spear = Instantiate(spear_Prefab);
+            spear.transform.position = arrow_Bow_StartPosition.position;
+
+            spear.GetComponent<ArrowBowScript>().Launch(mainCam);
+        }
+    }// throw arrow and spear
+
+    void BulletFired()
+    {
+        RaycastHit hit;
+
+        if(Physics.Raycast(mainCam.transform.position,mainCam.transform.forward, out hit))
+        {
+            
+        }
+
+    } // bullet fired
 
 }
