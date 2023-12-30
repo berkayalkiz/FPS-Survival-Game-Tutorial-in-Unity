@@ -34,7 +34,7 @@ public class PlayerAttack : MonoBehaviour
 
         //lookRoot = transform.GetChild(0);
         //zoomCameraAnim = lookRoot.GetChild(0).GetComponent<Animator>();
-
+        
         zoomCameraAnim = transform.Find(Tags.LOOK_ROOT).transform.Find(Tags.ZOOM_CAMERA).GetComponent<Animator>();
 
         crosshair = GameObject.FindWithTag(Tags.CROSSHAIR);
