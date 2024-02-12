@@ -16,6 +16,8 @@ public class AttackScript : MonoBehaviour
 
         if (hits.Length > 0)
         {
+            Debug.Log("Damage " + hits[0].gameObject.tag);
+
             gameObject.SetActive(false);
         }
     }

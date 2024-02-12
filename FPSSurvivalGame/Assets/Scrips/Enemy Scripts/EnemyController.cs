@@ -39,6 +39,8 @@ public class EnemyController : MonoBehaviour
 
     private Transform target;
 
+    public GameObject attack_Point;
+
 
     private void Awake()
     {
@@ -200,5 +202,18 @@ public class EnemyController : MonoBehaviour
         navAgent.SetDestination(navHit.position);
 
     }// set new random destination
+
+    void Turn_On_AttackPoint()
+    {
+        attack_Point.SetActive(true);
+    }
+
+    void Turn_Off_AttackPoint()
+    {
+        if (attack_Point.activeInHierarchy)
+        {
+            attack_Point.SetActive(false);
+        }
+    }
 
 }
