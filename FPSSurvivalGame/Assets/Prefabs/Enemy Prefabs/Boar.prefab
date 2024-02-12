@@ -13,6 +13,10 @@ PrefabInstance:
       value: Boar
       objectReference: {fileID: 0}
     - target: {fileID: 100022, guid: 1b38d20d3f0172743b5f14e4835aa86a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 1b38d20d3f0172743b5f14e4835aa86a, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
