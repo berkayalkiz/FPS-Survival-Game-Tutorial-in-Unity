@@ -83,11 +83,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 5eb4e4c4d0b3c8f4bb02a762ec01f6b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.268
+      value: 18.48
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 5eb4e4c4d0b3c8f4bb02a762ec01f6b4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 110.658
+      value: 125.07
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 5eb4e4c4d0b3c8f4bb02a762ec01f6b4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f84eb8fa0e17da4bb0225d56cf88036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healt: 100
+  health: 100
   isPlayer: 0
   isBoar: 0
   isCannibal: 1

@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 15
-  damage: 20
+  damage: 50
   arrow_Prefab: {fileID: 3353146672627984233, guid: 997d207db41c9574089c9381f3c44029, type: 3}
   spear_Prefab: {fileID: 1161824784935565954, guid: 8331da24f23276d4caa6f6c4cc5abd3f, type: 3}
   arrow_Bow_StartPosition: {fileID: 3309467819973519873}
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f84eb8fa0e17da4bb0225d56cf88036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healt: 100
+  health: 100
   isPlayer: 1
   isBoar: 0
   isCannibal: 0
@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 285fd756bfd8d1140867c383d6a35ab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 25
   radius: 1
   layerMask:
     serializedVersion: 2

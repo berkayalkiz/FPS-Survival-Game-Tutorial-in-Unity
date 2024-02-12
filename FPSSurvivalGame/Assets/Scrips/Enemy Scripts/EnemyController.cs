@@ -218,7 +218,7 @@ public class EnemyController : MonoBehaviour
 
     public EnemyState Enemy_State
     {
-       
+        get; set;
     }
 
 }
