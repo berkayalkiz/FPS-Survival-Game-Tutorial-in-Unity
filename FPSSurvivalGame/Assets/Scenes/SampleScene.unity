@@ -588,17 +588,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cannibal
       objectReference: {fileID: 0}
+    - target: {fileID: 8688747180303497253, guid: 888b5efcdad046a41b47559a38f86d42, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8688747180303655941, guid: 888b5efcdad046a41b47559a38f86d42, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.781
       objectReference: {fileID: 0}
     - target: {fileID: 8688747180303655941, guid: 888b5efcdad046a41b47559a38f86d42, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.268
+      value: 18.48
       objectReference: {fileID: 0}
     - target: {fileID: 8688747180303655941, guid: 888b5efcdad046a41b47559a38f86d42, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 110.658
+      value: 125.07
       objectReference: {fileID: 0}
     - target: {fileID: 8688747180303655941, guid: 888b5efcdad046a41b47559a38f86d42, type: 3}
       propertyPath: m_LocalRotation.w
