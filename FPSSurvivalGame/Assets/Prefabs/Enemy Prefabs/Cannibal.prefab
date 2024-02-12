@@ -151,6 +151,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100008, guid: 5eb4e4c4d0b3c8f4bb02a762ec01f6b4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4180416186451958981}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: 5eb4e4c4d0b3c8f4bb02a762ec01f6b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8683177012854071764}
   m_SourcePrefab: {fileID: 100100000, guid: 5eb4e4c4d0b3c8f4bb02a762ec01f6b4, type: 3}
 --- !u!1 &8688747180303497253 stripped
 GameObject:
@@ -261,6 +264,22 @@ MonoBehaviour:
   patrol_For_This_Time: 15
   wait_Before_Attack: 2
   attack_Point: {fileID: 8258315231107948407}
+--- !u!114 &8683177012854071764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8688747180303497253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f84eb8fa0e17da4bb0225d56cf88036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healt: 100
+  isPlayer: 0
+  isBoar: 0
+  isCannibal: 1
 --- !u!4 &8688747180303655957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400024, guid: 5eb4e4c4d0b3c8f4bb02a762ec01f6b4, type: 3}

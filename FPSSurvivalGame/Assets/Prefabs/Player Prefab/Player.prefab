@@ -187,7 +187,8 @@ GameObject:
   - component: {fileID: 6771213115456803449}
   - component: {fileID: 7008257141810105936}
   - component: {fileID: 4410443035198376352}
-  m_Layer: 0
+  - component: {fileID: 6523807041107255809}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -303,6 +304,22 @@ MonoBehaviour:
   arrow_Prefab: {fileID: 3353146672627984233, guid: 997d207db41c9574089c9381f3c44029, type: 3}
   spear_Prefab: {fileID: 1161824784935565954, guid: 8331da24f23276d4caa6f6c4cc5abd3f, type: 3}
   arrow_Bow_StartPosition: {fileID: 3309467819973519873}
+--- !u!114 &6523807041107255809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2327657469180875166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f84eb8fa0e17da4bb0225d56cf88036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healt: 100
+  isPlayer: 1
+  isBoar: 0
+  isCannibal: 0
 --- !u!1 &4797542351585221829
 GameObject:
   m_ObjectHideFlags: 0
