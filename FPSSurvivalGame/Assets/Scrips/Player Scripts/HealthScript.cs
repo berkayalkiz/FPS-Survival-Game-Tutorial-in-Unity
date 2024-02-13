@@ -17,6 +17,9 @@ public class HealtScript : MonoBehaviour
 
     private bool isDead;
 
+    private EnemyAudio enemyAudio;
+
+    private PlayerStats playerStats;
 
     void Awake()
     {
@@ -27,11 +30,13 @@ public class HealtScript : MonoBehaviour
             navAgent = GetComponent<NavMeshAgent>();
 
             //get enemy audio
+            enemyAudio = GetComponentInChildren<EnemyAudio>();
         }
+
 
         if (isPlayer)
         {
-
+            playerStats = GetComponent<PlayerStats>();
         }
     }
 
@@ -43,7 +48,7 @@ public class HealtScript : MonoBehaviour
 
         if (isPlayer)
         {
-            // show the stats
+            playerStats.DisplayHealthStats(health);
         }
 
         if(isBoar || isCannibal)
@@ -75,7 +80,7 @@ public class HealtScript : MonoBehaviour
             navAgent.enabled = false;
             enemy_Anim.enabled = false;
 
-            //startcoroutine
+            StartCoroutine(DeadSound());
 
             //enemymanager spawn more enemies
 
@@ -89,7 +94,7 @@ public class HealtScript : MonoBehaviour
 
             enemy_Anim.Dead();
 
-            //startcoroutine
+            StartCoroutine(DeadSound());
 
             //enemymanager spawn more enemies
         }
@@ -128,6 +133,13 @@ public class HealtScript : MonoBehaviour
     void TurnOffGameObject()
     {
         gameObject.SetActive(false);
+    }
+
+    IEnumerator DeadSound()
+    {
+        yield return new WaitForSeconds(0.3f);
+
+        enemyAudio.PlayDeadSound();
     }
 }
 
