@@ -84,6 +84,8 @@ public class HealtScript : MonoBehaviour
 
             //enemymanager spawn more enemies
 
+            EnemyManager.instance.EnemyDied(true);
+
         }
 
         if (isBoar)
@@ -97,6 +99,7 @@ public class HealtScript : MonoBehaviour
             StartCoroutine(DeadSound());
 
             //enemymanager spawn more enemies
+            EnemyManager.instance.EnemyDied(false);
         }
 
         if (isPlayer)
@@ -109,6 +112,7 @@ public class HealtScript : MonoBehaviour
             }
 
             //call enemy manager to stop spawning enemies
+            EnemyManager.instance.StopSpawning();
 
             GetComponent<PlayerMovement>().enabled = false;
             GetComponent<PlayerAttack>().enabled = false;

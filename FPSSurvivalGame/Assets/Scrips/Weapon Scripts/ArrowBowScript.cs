@@ -12,7 +12,7 @@ public class ArrowBowScript : MonoBehaviour
 
     public float deactivete_Timer = 3f;
 
-    public float damage = 15f;
+    public float damage = 50f;
 
     private void Awake()
     {
@@ -42,6 +42,11 @@ public class ArrowBowScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider target)
     {
-        
+        if(target.tag == Tags.ENEMY_TAG)
+        {
+            target.GetComponent<HealtScript>().ApplyDamage(damage);
+
+            gameObject.SetActive(false);
+        }
     }
 }
